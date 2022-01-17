@@ -1,0 +1,35 @@
+GET http://localhost:3000/subscriber/
+
+###
+
+POST  http://localhost:3000/subscriber
+Content-Type: application/json
+
+{
+    "name" : "abdulwadood",
+    "subscribedtochannel":"codewithharry"
+}
+
+###
+
+DELETE http://localhost:3000/subscriber/61d8c6fd640ae6850ed0b171
+
+###
+
+PATCH http://localhost:3000/subscriber/61d8c78d640ae6850ed0b180
+Content-Type: application/json
+
+{
+    "name":"shayaan mohammed",
+    "subscribedtochannel":"webdev simplified"
+}
+
+###
+
+PUT http://localhost:3000/subscriber/61d8c78d640ae6850ed0b180
+Content-Type: application/json
+
+{
+    "name":"wadood abdul",
+    "subscribedtochannel":"CodeWithHarry"
+}
