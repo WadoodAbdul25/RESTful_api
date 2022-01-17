@@ -55,6 +55,8 @@ router.put('/:id',getsubs,async(req,res)=>{
     if(req.body.name && req.body.subscribedtochannel != null){
         res.subscriber.name = req.body.name;
         res.subscriber.subscribedtochannel = req.body.subscribedtochannel;
+    }else{
+        res.send("this is a put request so please update all the elements of the object")
     }
     try{
         const updatedobj = await res.subscriber.save();
